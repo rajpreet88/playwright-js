@@ -1,0 +1,6 @@
+npx cucumber-js ./features/Ecommerce.feature --parallel 2 --format html:cucumber-report.html --exit
+npx cucumber-js ./features/Ecommerce.feature --parallel 2 --exit
+npx cucumber-js --tags "@Regression" --exit
+npx cucumber-js --tags "@ErrorValidation" --exit
+npx cucumber-js ./features/ErrorValidations.feature --exit
+npx cucumber-js --tags "@Regression" --retry 1 --format html:cumcumber-report.html --exit
